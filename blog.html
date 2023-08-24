@@ -1,0 +1,1055 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ecommerce Blog</title>
+    <!-- css links -->
+    <link rel="stylesheet" href="./Assets/css/all.min.css" />
+    <link rel="stylesheet" href="./Assets/css/normalize.css" />
+    <link rel="stylesheet" href="./Assets/css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="./Assets/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="./Assets/Bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./Assets/css/main.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,400;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- IMg Icon -->
+    <link
+      rel="shortcut icon"
+      href="./Assets/images/favicon.ico"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <div class="up">
+      <i class="fa-solid fa-circle-arrow-up"></i>
+    </div>
+    <!-- start nav  -->
+    <div class="header">
+      <div class="prenav">
+        <div class="container">
+          <div class="lang">
+            <div class="btn-group">
+              <button
+                class="btn btn-secondary dropdown-toggle"
+                type="button"
+                data-bs-toggle="dropdown"
+                data-bs-auto-close="true"
+                aria-expanded="false"
+              >
+                <img src="./Assets/images/flag/english.png" alt="jeo" />
+                <span>English</span>
+              </button>
+              <ul class="dropdown-menu">
+                <li>
+                  <a
+                    class="dropdown-item d-flex gap-3 align-items-center"
+                    href="#"
+                    ><img src="./Assets/images/flag/english.png" alt="jeo" />
+                    <span>English</span></a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item d-flex gap-3 align-items-center"
+                    href="#"
+                    ><img src="./Assets/images/flag/france.png" alt="d" />
+                    <span>France</span></a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item d-flex gap-3 align-items-center"
+                    href="#"
+                    ><img
+                      src="./Assets/images/flag/brazil.png"
+                      alt="images"
+                    /><span>Brazil</span></a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item d-flex gap-3 align-items-center"
+                    href="#"
+                    ><img src="./Assets/images/flag/russian.png" alt="jeo" />
+                    <span>Russian</span></a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="btn-group">
+              <button
+                class="btn btn-secondary dropdown-toggle"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                USD
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">USD</a></li>
+                <li><a class="dropdown-item" href="#">EUR</a></li>
+                <li><a class="dropdown-item" href="#">EP</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="links">
+            <ul>
+              <li>
+                <a href="#"
+                  ><i class="fa-solid fa-user"></i> <span>My Account</span></a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fa-solid fa-circle-check"></i>
+                  <span>Check Out</span></a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fa-regular fa-heart"></i> <span>Favourit</span></a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fa-solid fa-key"></i> <span>Login</span></a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="logo my-4">
+        <div
+          class="container d-flex justify-content-between flex-wrap flex-lg-row flex-sm-column"
+        >
+          <div class="logo-img m-auto m-lg-0">
+            <img class="img-fluied" src="./Assets/images/logo.jpg" alt="hwi" />
+          </div>
+          <div class="sels d-flex gap-3 flex-sm-column flex-lg-row">
+            <div class="box d-flex gap-3">
+              <div class="icon-red"><i class="fa-solid fa-truck-fast"></i></div>
+              <div class="d-flex flex-column">
+                <p>FREE DELIVERY WORLDWIDE</p>
+                <p>On order over $100</p>
+              </div>
+            </div>
+            <div class="box d-flex gap-3">
+              <div class="icon-red">
+                <i class="fa-solid fa-cloud-arrow-up"></i>
+              </div>
+              <div class="d-flex flex-column">
+                <p>UP TO 20% OFF COSY LAYERS</p>
+                <p>Lorem ipsum dolor sit amet</p>
+              </div>
+            </div>
+            <div class="box d-flex gap-3">
+              <div class="icon-red"><i class="fa-solid fa-gift"></i></div>
+              <div class="d-flex flex-column">
+                <p>BUY 1 GET 1 FREE</p>
+                <p>On order over $100</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- navbar -->
+      <div class="nav-bar">
+        <div
+          class="container d-flex justify-content-between align-items-center"
+        >
+          <nav class="navbar btn-nav navbar-dark bg-dark fixed-top">
+            <div class="container-fluid">
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasDarkNavbar"
+                aria-controls="offcanvasDarkNavbar"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div
+                class="offcanvas offcanvas-end text-bg-dark"
+                tabindex="-1"
+                id="offcanvasDarkNavbar"
+                aria-labelledby="offcanvasDarkNavbarLabel"
+              >
+                <div class="offcanvas-header">
+                  <button
+                    type="button"
+                    class="btn-close btn-close-white"
+                    data-bs-dismiss="offcanvas"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="index.html"
+                        >Home</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">FUNITURE</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a
+                        class="nav-link dropdown-toggle"
+                        href="product.html"
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        All Product
+                      </a>
+                      <ul class="dropdown-menu dropdown-menu-dark">
+                        <li><a class="dropdown-item" href="#">Bags</a></li>
+                        <li>
+                          <a class="dropdown-item" href="#">Shos</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Shirts</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Clothes</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Phones</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Shop</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a
+                        class="nav-link dropdown-toggle"
+                        href="#"
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        Mobile
+                      </a>
+                      <ul class="dropdown-menu dropdown-menu-dark">
+                        <li>
+                          <a class="dropdown-item" href="#">Cgf Prodect</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Bolgs</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Chars</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Cosmestic</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a
+                        class="nav-link dropdown-toggle"
+                        href="#"
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        Offer
+                      </a>
+                      <ul class="dropdown-menu dropdown-menu-dark">
+                        <li>
+                          <a class="dropdown-item" href="#">Coffee Tables</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Kids</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Bid</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Chers</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Deal</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link active" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Contact Us</a>
+                    </li>
+                  </ul>
+                  <form class="d-flex mt-3" role="search">
+                    <input
+                      class="form-control me-2"
+                      type="search"
+                      placeholder="Search"
+                      aria-label="Search"
+                    />
+                    <button class="btn btn-danger" type="submit">Search</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </nav>
+          <div class="search search-js position-absolute">
+            <input
+              class="w-100 h-100 z-4"
+              type="search"
+              placeholder="Search ..."
+            />
+            <span>Search</span>
+          </div>
+          <div class="links">
+            <ul class="d-flex gap-4">
+              <li><a href="index.html">Home</a></li>
+              <li>
+                <a href="#">FUNITURE</a>
+                <div
+                  class="box box1 position-absolute d-flex align-items-center"
+                >
+                  <div class="box-links">
+                    <h4>TABLE</h4>
+                    <ul class="d-flex flex-column">
+                      <li>Living Room Tables</li>
+                      <li>Sofa Tables</li>
+                      <li>End Tables</li>
+                      <li>Coffee Tables</li>
+                      <li>Kids' Furniture</li>
+                      <li>Pedestal Tables</li>
+                      <li>Home Office Desks</li>
+                      <li>Coffee Tables</li>
+                      <li>Pedestal Tables</li>
+                      <li>Home Office Desks</li>
+                      <li>Kids' Furniture</li>
+                      <li>Kitchen & Dining Room Sets</li>
+                    </ul>
+                  </div>
+                  <div class="box-links">
+                    <h4>Pedestal</h4>
+                    <ul class="d-flex flex-column">
+                      <li>Kids' Furniture</li>
+                      <li>Sofa Tables</li>
+                      <li>Pedestal Tables</li>
+                      <li>Living Room Tables</li>
+                      <li>Home Office Desks</li>
+                      <li>Pedestal Tables</li>
+                      <li>End Tables</li>
+                      <li>Coffee Tables</li>
+                      <li>Kitchen & Dining Room Sets</li>
+                      <li>Coffee Tables</li>
+                      <li>Pedestal Tables</li>
+                      <li>Home Office Desks</li>
+                    </ul>
+                  </div>
+                  <div class="box-links img">
+                    <img src="./Assets/images/menu/bmenug.jpg" alt="9yy" />
+                  </div>
+                </div>
+              </li>
+              <li><a href="product.html">All Prudects</a></li>
+              <li>
+                <a href="#">Shop</a>
+                <div
+                  class="box box2 position-absolute d-flex align-items-center"
+                >
+                  <div class="box-links">
+                    <h4>TABLE</h4>
+                    <ul class="d-flex flex-column">
+                      <li>Living Room Tables</li>
+                      <li>Sofa Tables</li>
+                      <li>End Tables</li>
+                      <li>Coffee Tables</li>
+                      <li>Kids' Furniture</li>
+                      <li>Pedestal Tables</li>
+                      <li>Home Office Desks</li>
+                      <li>Coffee Tables</li>
+                    </ul>
+                  </div>
+                  <div class="box-links">
+                    <h4>table one</h4>
+                    <ul class="d-flex flex-column">
+                      <li>Kids' Furniture</li>
+                      <li>Sofa Tables</li>
+                      <li>Pedestal Tables</li>
+                      <li>Living Room Tables</li>
+                      <li>Home Office Desks</li>
+                      <li>Pedestal Tables</li>
+                      <li>End Tables</li>
+                      <li>Coffee Tables</li>
+                    </ul>
+                  </div>
+                  <div class="box-links">
+                    <h4>table two</h4>
+                    <ul class="d-flex flex-column">
+                      <li>Kids' Furniture</li>
+                      <li>Sofa Tables</li>
+                      <li>Pedestal Tables</li>
+                      <li>Living Room Tables</li>
+                      <li>Home Office Desks</li>
+                      <li>Pedestal Tables</li>
+                      <li>End Tables</li>
+                      <li>Coffee Tables</li>
+                    </ul>
+                  </div>
+                  <div class="box-links">
+                    <h4>table three</h4>
+                    <ul class="d-flex flex-column">
+                      <li>Kids' Furniture</li>
+                      <li>Sofa Tables</li>
+                      <li>Pedestal Tables</li>
+                      <li>Living Room Tables</li>
+                      <li>Home Office Desks</li>
+                      <li>Pedestal Tables</li>
+                      <li>End Tables</li>
+                      <li>Coffee Tables</li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li><a href="#">Mobile</a></li>
+              <li>
+                <a href="#">Offer</a>
+                <div
+                  class="box box3 position-absolute d-flex align-items-center"
+                >
+                  <div class="box-links">
+                    <div class="card">
+                      <img
+                        src="./Assets/images/menu/menu3.jpg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="card-body">
+                        <span>cher</span>
+                        <p class="card-text">
+                          Some quick example text to build on the card title and
+                          make up the bulk of the card's content.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="box-links">
+                    <div class="card">
+                      <img
+                        src="./Assets/images/menu/menu4.jpg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="card-body">
+                        <span>Bad</span>
+                        <p class="card-text">
+                          Some quick example text to build on the card title and
+                          make up the bulk of the card's content.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="box-links">
+                    <div class="card" style="width: 18rem">
+                      <img
+                        src="./Assets/images/menu/menu6.jpg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="card-body">
+                        <span>cart</span>
+                        <p class="card-text">
+                          Some quick example text to build on the card title and
+                          make up the bulk of the card's content.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="box-links">
+                    <div class="card" style="width: 18rem">
+                      <img
+                        src="./Assets/images/menu/menu5.jpg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="card-body">
+                        <span>FURNITURE CHEST</span>
+                        <p class="card-text">
+                          Some quick example text to build on the card title and
+                          make up the bulk of the card's content.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li><a href="#">Deal</a></li>
+              <li><a href="#" class="active">Blog</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+          <div
+            class="search d-flex align-items-center justify-content-between gap-2"
+          >
+            <i
+              class="fa-solid search-icon fa-magnifying-glass pe-2 border-end border-2 h-100 lh-lg me-2"
+            ></i>
+            <!-- Button trigger modal -->
+            <button
+              type="button"
+              class="btn btn-primary btn-cart"
+              data-bs-toggle="modal"
+              data-bs-target="#staticBackdrop"
+            >
+              <i class="fa-solid fa-cart-shopping"> </i>
+            </button>
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="staticBackdrop"
+              data-bs-backdrop="static"
+              data-bs-keyboard="false"
+              tabindex="-1"
+              aria-labelledby="staticBackdropLabel"
+              aria-hidden="true"
+            >
+              <div
+                class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+              >
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                      Your Cart
+                    </h1>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="box">
+                      <a href="product.html">
+                        <img src="./Assets/images/products/1.jpg" alt="jso" />
+                      </a>
+                      <div class="span">
+                        <span>Modular Modern</span> <span>1150 $</span>
+                      </div>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="box">
+                      <a href="product.html">
+                        <img src="./Assets/images/products/2.jpg" alt="jso" />
+                      </a>
+                      <div class="span">
+                        <span>Modular Modern</span> <span>710 $</span>
+                      </div>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="box">
+                      <a href="product.html">
+                        <img src="./Assets/images/products/3.jpg" alt="jso" />
+                      </a>
+                      <div class="span">
+                        <span>Modular Modern</span> <span>950 $</span>
+                      </div>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                    <button type="button" class="btn btn-primary">
+                      Save Changes
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="cart d-flex align-items-center gap-4 justify-content-between"
+            >
+              <span><span>3</span> (Items)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end nav  -->
+    <!-- start blog -->
+    <div class="blog">
+      <div class="container">
+        <div class="menu-mobile .d-none .d-sm-block .d-md-none">
+          <nav class="navbar bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Our Blog &clubs;</a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div
+                class="offcanvas offcanvas-start"
+                tabindex="-1"
+                id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel"
+              >
+                <div class="offcanvas-header">
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="offcanvas"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="offcanvas-body">
+                  <div class="menu">
+                    <div class="list">
+                      <h2 class="blog-title">ALL CATEGORIES</h2>
+                      <ul>
+                        <li><span>1</span> <a href="#">Sofas & Couches</a></li>
+                        <li>
+                          <span>2</span> <a href="#">Living Room Furniture</a>
+                        </li>
+                        <li>
+                          <span>3</span> <a href="#">Television Stands</a>
+                        </li>
+                        <li>
+                          <span>4</span> <a href="#">Bedroom Furniture</a>
+                        </li>
+                        <li><span>5</span> <a href="#">Ottomans</a></li>
+                        <li>
+                          <span>6</span> <a href="#">Kids' Furniture & Décor</a>
+                        </li>
+                        <li>
+                          <span>7</span> <a href="#">Chests of Drawers</a>
+                        </li>
+                        <li><span>8</span> <a href="#">Media Storage</a></li>
+                      </ul>
+                      <a href="#!" class="more">MORE CATEGORIES </a>
+                    </div>
+                    <div class="post">
+                      <h2 class="blog-title">LATEST POST</h2>
+                      <div class="box">
+                        <img src="./Assets/images/blog/blog5.jpg" alt="jwoi" />
+                        <div class="info">
+                          <span>Donec scelerisque quam vitae est.</span>
+                          <p>
+                            <i class="fa-regular fa-calendar"></i> Sept, 20,
+                            2015
+                          </p>
+                        </div>
+                      </div>
+                      <div class="box">
+                        <img src="./Assets/images/blog/blog6.jpg" alt="jwoi" />
+                        <div class="info">
+                          <span>Donec scelerisque quam vitae est.</span>
+                          <p>
+                            <i class="fa-regular fa-calendar"></i> Sept, 20,
+                            2015
+                          </p>
+                        </div>
+                      </div>
+                      <div class="box">
+                        <img src="./Assets/images/blog/blog7.jpg" alt="jwoi" />
+                        <div class="info">
+                          <span>Donec scelerisque quam vitae est.</span>
+                          <p>
+                            <i class="fa-regular fa-calendar"></i> Sept, 20,
+                            2015
+                          </p>
+                        </div>
+                      </div>
+                      <div class="box">
+                        <img src="./Assets/images/blog/blog5.jpg" alt="jwoi" />
+                        <div class="info">
+                          <span>Donec scelerisque quam vitae est.</span>
+                          <p>
+                            <i class="fa-regular fa-calendar"></i> Sept, 20,
+                            2015
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+        <div class="row">
+          <div class="menu mn-hd col-lg-3">
+            <div class="list">
+              <h2 class="blog-title">ALL CATEGORIES</h2>
+              <ul>
+                <li><span>1</span> <a href="#">Sofas & Couches</a></li>
+                <li><span>2</span> <a href="#">Living Room Furniture</a></li>
+                <li><span>3</span> <a href="#">Television Stands</a></li>
+                <li><span>4</span> <a href="#">Bedroom Furniture</a></li>
+                <li><span>5</span> <a href="#">Ottomans</a></li>
+                <li><span>6</span> <a href="#">Kids' Furniture & Décor</a></li>
+                <li><span>7</span> <a href="#">Chests of Drawers</a></li>
+                <li><span>8</span> <a href="#">Media Storage</a></li>
+              </ul>
+              <a href="#!" class="more">MORE CATEGORIES </a>
+            </div>
+            <div class="post">
+              <h2 class="blog-title">LATEST POST</h2>
+              <div class="box">
+                <img src="./Assets/images/blog/blog5.jpg" alt="jwoi" />
+                <div class="info">
+                  <span>Donec scelerisque quam vitae est.</span>
+                  <p><i class="fa-regular fa-calendar"></i> Sept, 20, 2015</p>
+                </div>
+              </div>
+              <div class="box">
+                <img src="./Assets/images/blog/blog6.jpg" alt="jwoi" />
+                <div class="info">
+                  <span>Donec scelerisque quam vitae est.</span>
+                  <p><i class="fa-regular fa-calendar"></i> Sept, 20, 2015</p>
+                </div>
+              </div>
+              <div class="box">
+                <img src="./Assets/images/blog/blog7.jpg" alt="jwoi" />
+                <div class="info">
+                  <span>Donec scelerisque quam vitae est.</span>
+                  <p><i class="fa-regular fa-calendar"></i> Sept, 20, 2015</p>
+                </div>
+              </div>
+              <div class="box">
+                <img src="./Assets/images/blog/blog5.jpg" alt="jwoi" />
+                <div class="info">
+                  <span>Donec scelerisque quam vitae est.</span>
+                  <p><i class="fa-regular fa-calendar"></i> Sept, 20, 2015</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="content col-lg-9">
+            <div class="box">
+              <div class="img-box">
+                <img src="./Assets/images/blog/blog4.jpg" alt="" />
+              </div>
+              <div class="date">
+                <span>JAN 18, 2015</span>
+                <span>Post by: Logartmme</span>
+              </div>
+              <div class="info">
+                <a href="#"> Donec scelerisque quam vitae est. </a>
+                <p>
+                  Duis imperdiet diam pharetra nisi. Fusce accumsan. Fusce
+                  adipiscing, felis non ornare egestas, risus elit placerat
+                  mauris, in mollis ante erat quis nisi. Quisque sed ipsum.
+                  Vestibulum eu risus. hasellus tempus massa aliquet urna.
+                  Integer fringilla quam eget dolor.
+                </p>
+                <a href="#" class="main-btn">Read More</a>
+              </div>
+            </div>
+            <div class="box">
+              <div class="img-box">
+                <img src="./Assets/images/blog/blog1.jpg" alt="" />
+              </div>
+              <div class="date">
+                <span>JUL 12, 2015</span>
+                <span>Post by: KomodoArt</span>
+              </div>
+              <div class="info">
+                <a href="#"> Donec scelerisque quam vitae est. </a>
+                <p>
+                  Duis imperdiet diam pharetra nisi. Fusce accumsan. Fusce
+                  adipiscing, felis non ornare egestas, risus elit placerat
+                  mauris, in mollis ante erat quis nisi. Quisque sed ipsum.
+                  Vestibulum eu risus. hasellus tempus massa aliquet urna.
+                  Integer fringilla quam eget dolor.
+                </p>
+                <a href="#" class="main-btn">Read More</a>
+              </div>
+            </div>
+            <div class="pages">
+              <div class="number active">1</div>
+              <div class="number">2</div>
+              <div class="number">3</div>
+              <div class="number">4</div>
+              <div class="number">></div>
+            </div>
+            <!-- end  pages blog -->
+            <!-- start comments -->
+            <div class="comment">
+              <div class="blog-title">
+                <h2>5 Comments</h2>
+              </div>
+              <div class="main-com">
+                <div class="img">
+                  <img src="./Assets/images/blog/tm_avatar1.jpg" alt="geu" />
+                </div>
+                <div class="info">
+                  <span>Emma - <span>Studen</span></span>
+                  <p>
+                    No one rejects, dislikes, or avoids pleasure itself, because
+                    it is pleasure, but because those who do not know how to
+                    pursue pleasure rationally encounter consequences that are
+                    extremely painful. Nor again is there anyone who loves or
+                    pursues or desires to obtain pain of itself, because it is
+                    pain, but because occasionally circumstances occur.
+                  </p>
+                  <p>December 15, at 14h:20, <span>Reply</span></p>
+                </div>
+              </div>
+              <div class="replay">
+                <div class="main-com">
+                  <div class="img">
+                    <img src="./Assets/images/blog/tm_avatar2.jpg" alt="geu" />
+                  </div>
+                  <div class="info">
+                    <span>Mario - <span>Studen</span></span>
+                    <p>
+                      No one rejects, dislikes, or avoids pleasure itself,
+                      because it is pleasure, but because those who do not know
+                      how to pursue pleasure rationally encounter consequences
+                      that are extremely painful. Nor again is there anyone who
+                      loves or pursues or desires to obtain pain of itself,
+                      because it is pain, but because occasionally circumstances
+                      occur.
+                    </p>
+                    <p>December 09, at 10h:30, <span>Reply</span></p>
+                  </div>
+                </div>
+                <div class="main-com">
+                  <div class="img">
+                    <img src="./Assets/images/blog/tm_avatar1.jpg" alt="geu" />
+                  </div>
+                  <div class="info">
+                    <span>Emma - <span>Studen</span></span>
+                    <p>
+                      No one rejects, dislikes, or avoids pleasure itself,
+                      because it is pleasure, but because those who do not know
+                      how to pursue pleasure rationally encounter consequences
+                      that are extremely painful. Nor again is there anyone who
+                      loves or pursues or desires to obtain pain of itself,
+                      because it is pain, but because occasionally circumstances
+                      occur.
+                    </p>
+                    <p>December 19, at 19h:05, <span>Reply</span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="main-com">
+                <div class="img">
+                  <img src="./Assets/images/blog/tm_avatar2.jpg" alt="geu" />
+                </div>
+                <div class="info">
+                  <span>Emma - <span>Studen</span></span>
+                  <p>
+                    No one rejects, dislikes, or avoids pleasure itself, because
+                    it is pleasure, but because those who do not know how to
+                    pursue pleasure rationally encounter consequences that are
+                    extremely painful. Nor again is there anyone who loves or
+                    pursues or desires to obtain pain of itself, because it is
+                    pain, but because occasionally circumstances occur.
+                  </p>
+                  <p>December 15, at 14h:20, <span>Reply</span></p>
+                </div>
+              </div>
+            </div>
+            <!-- end comments -->
+            <!-- start form  -->
+            <div class="form">
+              <div class="blog-title">
+                <h2>LEAVE A COMMENT</h2>
+              </div>
+              <div class="box">
+                <div class="input">
+                  <input type="text" name="txt" id="txt" placeholder="Name" />
+                  <input type="text" name="txt" id="txt" placeholder="Email" />
+                  <input
+                    type="text"
+                    name="txt"
+                    id="txt"
+                    placeholder="recommended"
+                  />
+                </div>
+                <div class="msg">
+                  <textarea
+                    name="col"
+                    id="teax"
+                    placeholder="Your Comment"
+                  ></textarea>
+                </div>
+                <div class="submit">
+                  <button class="main-btn">Submit</button>
+                </div>
+              </div>
+            </div>
+            <!-- end form  -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end blog -->
+    <!-- start footer -->
+    <div class="brand">
+      <div class="container">
+        <div class="owl-carousel owl-theme owl-loaded">
+          <div class="owl-stage-outer">
+            <div class="owl-stage">
+              <div class="owl-item">
+                <div class="box">
+                  <a href="#"
+                    ><img src="./Assets/images/brands/1.png" alt="uwi"
+                  /></a>
+                </div>
+              </div>
+              <div class="owl-item">
+                <div class="box">
+                  <a href="#"
+                    ><img src="./Assets/images/brands/2.png" alt="uwi"
+                  /></a>
+                </div>
+              </div>
+              <div class="owl-item">
+                <div class="box">
+                  <a href="#"
+                    ><img src="./Assets/images/brands/3.png" alt="uwi"
+                  /></a>
+                </div>
+              </div>
+              <div class="owl-item">
+                <div class="box">
+                  <a href="#"
+                    ><img src="./Assets/images/brands/4.png" alt="uwi"
+                  /></a>
+                </div>
+              </div>
+              <div class="owl-item">
+                <div class="box">
+                  <a href="#"
+                    ><img src="./Assets/images/brands/5.png" alt="uwi"
+                  /></a>
+                </div>
+              </div>
+              <div class="owl-item">
+                <div class="box">
+                  <a href="#"
+                    ><img src="./Assets/images/brands/6.png" alt="uwi"
+                  /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="box col-lg-3 col-sm-6">
+            <h3>Contact Us</h3>
+            <div class="d-flex align-items-center">
+              <i class="fa-solid fa-house"></i>
+              <div>
+                <span>8888 South Avenue Street</span>
+                <span>New York</span>
+              </div>
+            </div>
+            <div class="d-flex align-items-center">
+              <i class="fa-solid fa-phone"></i>
+              <div>
+                <span>(12) 3 4567 38096</span>
+                <span>(20) 11 4470 6724</span>
+              </div>
+            </div>
+            <div class="d-flex align-items-center">
+              <i class="fa-solid fa-envelope"></i>
+              <div>
+                <span>Walidhamdy314@gmail.com</span>
+                <span>Walidllo@domin.com</span>
+              </div>
+            </div>
+          </div>
+          <div class="box col-lg-2 col-sm-6">
+            <h3>SERVICE</h3>
+            <ul>
+              <li>rices & Currencies</li>
+              <li>Secure Payment</li>
+              <li>Delivery Times & Costs</li>
+              <li>Returns & Exchanges</li>
+              <li>FAQ's</li>
+            </ul>
+          </div>
+          <div class="box col-lg-2 col-xs-6">
+            <h3>Account</h3>
+            <ul>
+              <li>My account</li>
+              <li>Wishlest</li>
+              <li>User</li>
+              <li>Accses</li>
+              <li>Gift vouchers</li>
+            </ul>
+          </div>
+          <div class="box col-lg-2 col-xs-6">
+            <h3>Information</h3>
+            <ul>
+              <li>Costs</li>
+              <li>Secure Payment</li>
+              <li>Delivery Times</li>
+              <li>Returns & Exchanges</li>
+              <li>Devaloped</li>
+            </ul>
+          </div>
+          <div class="box col-lg-3">
+            <h3>NEWSLETTER</h3>
+            <span>Register your email for news</span>
+            <input type="text" placeholder="Your email here" />
+            <button class="main-btn">Subscribe</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="copy">
+      <div
+        class="container d-flex align-items-center justify-content-between py-3"
+      >
+        <p>
+          &copy; 2023 Magento Demo Store. All Rights Reserved. Developer by
+          <span>Walid Hamdy 💛</span>
+        </p>
+        <img src="./Assets/images/sns_paymal.png" alt="839hi" />
+      </div>
+    </div>
+    <!-- end footer -->
+    <script src="./Assets/js/code.jquery.com_jquery-3.7.0.min.js"></script>
+    <script src="./Assets/js/owl.carousel.min.js"></script>
+    <script src="./Assets/Bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="./Assets/js/main.js"></script>
+  </body>
+</html>

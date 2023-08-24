@@ -1,0 +1,147 @@
+@use "../helpers/varibels" as *;
+@use "../helpers/mixins" as *;
+//
+@use "./grid" as *;
+//
+@use "../componants/botton" as *;
+@use "../componants/heading" as *;
+@use "../componants/bg" as *;
+
+// start footer
+.brand {
+  position: relative;
+  margin-top: 50px;
+  .container {
+    .owl-carousel .owl-nav button.owl-next {
+      right: -1px;
+    }
+    .owl-carousel .owl-nav button.owl-prev {
+      left: 1px;
+    }
+    .owl-carousel .owl-nav button.owl-prev,
+    .owl-carousel .owl-nav button.owl-next {
+      position: absolute;
+      &:hover {
+        background-color: $red-color;
+        color: white;
+      }
+      background-color: white;
+      font-size: 40px;
+      top: 35px;
+      @include mobile {
+        top: 38%;
+      }
+      border: 1px solid #ccc;
+      width: 30px;
+      height: 30px;
+      line-height: 13px;
+    }
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+    .owl-item {
+      position: relative;
+      .box {
+        transition: 0.4s;
+        &:hover {
+          background-color: $gray-color;
+        }
+      }
+    }
+  }
+}
+.footer {
+  position: relative;
+  font-size: 13px;
+  color: $defult-color;
+  font-weight: 300;
+  margin: 50px 0 0 0;
+  background-color: $section-color;
+  .container {
+    .row > * {
+      @include mobile {
+        width: auto !important;
+      }
+    }
+    padding-top: 30px;
+    flex-wrap: wrap;
+    .box {
+      margin-bottom: 20px;
+      ul {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        li {
+          cursor: pointer;
+          transition: 0.4s;
+          &:hover {
+            color: $red-color;
+          }
+        }
+      }
+      h3 {
+        font-size: 17px;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: $dark-color;
+      }
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      .d-flex {
+        gap: 10px;
+        align-items: center;
+        span {
+          display: block;
+        }
+      }
+      i {
+        transition: 0.4s;
+        color: #333;
+        position: relative;
+        line-height: 28px;
+        padding: 20px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        width: 25px;
+        height: 25px;
+        justify-content: center;
+        background-color: $white-color;
+        border: 1px solid #ccc;
+      }
+      button {
+        @extend %main-btn;
+      }
+      input {
+        width: 80%;
+        height: 30px;
+        outline: none;
+        padding: 10px 5px;
+        border: 1px solid #ccc;
+      }
+    }
+  }
+}
+.copy {
+  .container {
+    @include mobile {
+      flex-direction: column-reverse;
+      gap: 20px;
+      text-align: center;
+    }
+  }
+  p {
+    font-size: 13px;
+    color: $defult-color;
+    span {
+      cursor: pointer;
+      color: $dark-color;
+      transition: 0.3s;
+      font-size: 15px;
+      &:hover {
+        color: $red-color;
+      }
+    }
+  }
+}
+// end footer

@@ -1,0 +1,27 @@
+@use "../helpers/mixins" as *;
+@use "../helpers/varibels" as *;
+@use "../layout/grid" as *;
+
+//img bg
+.img-box::before {
+  position: absolute;
+  content: "";
+  width: 50%;
+  height: 100%;
+  background-color: rgb(237 237 237 / 14%);
+  top: 0;
+  left: -50%;
+  z-index: 3;
+  transition: 0.7s;
+}
+.img-box::after {
+  position: absolute;
+  content: "";
+  width: 50%;
+  height: 100%;
+  background-color: rgb(237 237 237 / 14%);
+  top: 0;
+  right: -50%;
+  z-index: 3;
+  transition: 0.7s;
+}

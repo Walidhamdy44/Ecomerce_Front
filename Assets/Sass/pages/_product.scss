@@ -1,0 +1,323 @@
+@use "../helpers/varibels" as *;
+@use "../helpers/mixins" as *;
+//
+@use "../layout/grid" as *;
+@use "../layout/footer" as *;
+@use "../layout/header" as *;
+@use "../layout/nav-menu" as *;
+//
+@use "../componants/botton" as *;
+@use "../componants/heading" as *;
+
+//  start product
+.product-info {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 40px;
+  .img {
+    margin-bottom: 20px;
+    .big-img {
+      border: 1px solid #ccc;
+      padding: 10px;
+      img {
+        max-width: 100%;
+      }
+    }
+    .small-img {
+      display: flex;
+      gap: 5px;
+      cursor: pointer;
+      align-items: center;
+      justify-content: center;
+      margin-top: 20px;
+      img {
+        width: 80px;
+        height: 80px;
+        border: 1px solid #ccc;
+      }
+    }
+  }
+  .info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    .head {
+      a {
+        display: block;
+        color: $red-color;
+        font-size: 15px;
+        margin-bottom: 10px;
+        font-weight: bold;
+      }
+      span:first-of-type {
+        font-size: 14px;
+        font-weight: bold;
+        display: block;
+        margin-bottom: 10px;
+      }
+      span:last-of-type {
+        margin-bottom: 10px;
+        font-size: 13px;
+      }
+      p {
+        display: flex;
+        gap: 5px;
+        align-items: center;
+        font-size: 12px;
+        color: $defult-color;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #ccc;
+        i {
+          color: gold;
+        }
+        span {
+          cursor: pointer;
+          font-weight: bold;
+          color: $dark-color;
+          margin-top: 10px;
+          &:hover {
+            color: $red-color;
+          }
+        }
+      }
+    }
+    .input {
+      span {
+        font-size: 14px;
+        font-weight: bold;
+      }
+      p {
+        font-size: 12px;
+        margin: 10px 0;
+        color: $defult-color;
+      }
+      label {
+        font-weight: bold;
+        color: $dark-color;
+        margin-bottom: 10px;
+        span {
+          color: $red-color;
+          padding: 0 5px;
+        }
+      }
+      select {
+        margin: 5px 0;
+        font-size: 14px;
+        color: $dark-color;
+      }
+    }
+    .foot {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 20px;
+      label {
+        font-weight: bold;
+        font-size: 14px;
+      }
+      a {
+        @extend %main-btn;
+        padding: 10px;
+        font-size: 14px;
+        background-color: $white-color;
+        color: $dark-color;
+        &:hover {
+          color: $white-color;
+          background-color: $red-color;
+        }
+      }
+      input {
+        height: 42px;
+        width: 49px;
+        outline: none;
+        border: 1px solid #ccc;
+      }
+      .icons {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        i {
+          border: 1px solid #ccc;
+          color: $defult-color;
+          width: 40px;
+          height: 40px;
+          text-align: center;
+          line-height: 39px;
+          cursor: pointer;
+          transition: 0.4s;
+          &:hover {
+            color: $white-color;
+            background-color: $red-color;
+          }
+        }
+      }
+    }
+  }
+}
+// start text product
+.text {
+  .form {
+    button {
+      color: white !important;
+      &:hover {
+        color: $red-color !important;
+      }
+    }
+  }
+  .form .blog-title h2 {
+    font-size: 17px;
+    font-weight: bold;
+    margin: 20px;
+  }
+  .content {
+    border: 1px solid #ccc;
+    nav {
+      padding: 0 10px;
+    }
+    .nav-tabs {
+      display: flex;
+      gap: 10px;
+      margin: 20px 0 5px;
+      font-size: 12px;
+      flex-wrap: nowrap;
+    }
+    button {
+      margin: 0;
+      color: $dark-color;
+      &:hover {
+        background-color: $white-color;
+        color: $red-color;
+      }
+    }
+    .p {
+      display: flex;
+      margin: 20px 0;
+      gap: 20px;
+      flex-direction: column;
+      p {
+        font-size: 12px;
+        color: $defult-color;
+      }
+    }
+  }
+  .img-box {
+    width: 200px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 20px;
+    img {
+      max-width: 100%;
+    }
+  }
+  p {
+    font-size: 13px;
+    color: $defult-color;
+    margin-bottom: 20px;
+  }
+}
+// end text product
+// start menu
+.menu-mobile {
+  .menu-product {
+    @include mobile {
+      display: block;
+      padding: 10px;
+    }
+    @include tablet {
+      display: block;
+      padding: 10px;
+    }
+  }
+}
+.menu-product {
+  .head {
+    h2 {
+      font-size: 18px;
+      font-weight: bold;
+      color: $dark-color;
+      padding: 20px 0;
+      border-bottom: 1px solid #ccc;
+    }
+  }
+  .img-box {
+    border: none;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  @include mobile {
+    display: none;
+  }
+  @include tablet {
+    display: none;
+  }
+  .box {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    padding: 20px 0;
+    .box-one {
+      display: flex;
+      gap: 20px;
+      color: $dark-color;
+      img {
+        width: 100px;
+        height: 100px;
+        max-width: 100%;
+        border: 1px solid #dcdcdc;
+        padding: 5px;
+        transition: 0.4s;
+        &:hover {
+          border-color: #99e9a5;
+        }
+      }
+      a {
+        font-size: 12px;
+        color: $defult-color;
+        &:hover {
+          color: $red-color;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+  .owl-carousel .owl-nav button.owl-next {
+    right: 15px;
+  }
+  .owl-carousel .owl-nav.disabled {
+    display: block !important;
+  }
+  .owl-carousel .owl-nav button.owl-prev {
+    right: 60px;
+  }
+  .owl-carousel .owl-nav button.owl-prev,
+  .owl-carousel .owl-nav button.owl-next {
+    position: absolute;
+    padding: 3px;
+    outline: 5px solid white;
+    &:hover {
+      background-color: $red-color;
+      color: white;
+    }
+    background-color: white;
+    font-size: 40px;
+    top: -60px;
+    @include mobile {
+      top: -60px;
+    }
+    border: 1px solid #ccc;
+    width: 30px;
+    height: 30px;
+    line-height: 13px;
+  }
+  border: 1px solid #ccc;
+  .box {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+  }
+}
+// end menu
+//  end product

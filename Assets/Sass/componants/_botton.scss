@@ -1,0 +1,35 @@
+@use "../helpers/mixins" as *;
+@use "../helpers/varibels" as *;
+@use "../layout/grid" as *;
+
+.grident-btn {
+  @include grediant-from;
+  display: inline-block;
+  background-size: 200%, 1px;
+  text-align: center;
+  color: $black-color;
+  padding: 16px 50px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  @include transition;
+  &:hover {
+    color: $white-color;
+    background-position: 100% 0;
+  }
+}
+
+%main-btn {
+  width: fit-content;
+  display: block;
+  outline: none;
+  border: 1px solid #ccc;
+  padding: 10px 20px;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: 0.4s;
+  background-color: $dark-color;
+  &:hover {
+    background-color: $red-color;
+  }
+}
