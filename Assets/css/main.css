@@ -648,7 +648,7 @@ button:hover, .main-box .btn-product button:hover, .new-product .box a:hover, .e
 }
 @media (max-width: 576px) {
   .nav-bar .search i {
-    margin: 0 20px;
+    margin: 0 0 0 20px ;
     position: relative;
     left: 260px;
   }
