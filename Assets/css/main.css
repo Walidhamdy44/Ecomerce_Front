@@ -464,6 +464,7 @@ button:hover, .main-box .btn-product button:hover, .new-product .box a:hover, .e
 }
 .nav-bar .container {
   position: relative;
+ overflow: hidden;
   padding: 10px 0;
   border-bottom: 1.5px dashed #ccc;
   border-top: 1.5px dashed #ccc;
